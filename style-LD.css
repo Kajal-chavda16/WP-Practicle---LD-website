@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 95.5%;
+    text-align: justify;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    line-height: 1.5;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+p,
+li {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    /* word-spacing: 0.3rem; */
+    line-height: 1.4;
+    text-align: justify;
+
+}
+
+/* Theme rules */
+
+/* Layout rules */
+
+/* Module/Reusable */
+
+/* STARTS HEADER SECTION */
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    height: 9rem;
+    width: 100%;
+
+    & a img {
+        height: 5rem;
+    }
+}
+
+.LDCE-logo{
+    display: flex;
+    gap: 46rem;
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .img1 {
+    /* margin-right: 45rem; */
+    margin-left: 3rem;
+}
+
+.header-list {
+
+    & .main-a {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.header-list ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1.7rem;
+    text-transform: uppercase;
+
+    & li {
+        padding: 0.2rem 0.1rem;
+        font-weight: 500;
+
+        & a {
+            text-decoration: none;
+            color: blue;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+/* ENDS HEADER SECTION */
+
+/* STARTS MAIN SECTION */
+
+main {
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+    & p,
+    ul {
+        padding-left: 3rem;
+        border-left: 1.5px solid blue;
+    }
+}
+
+main p {
+    background-color: rgba(128, 128, 128, 0.075);
+}
+
+main li {
+    list-style-type: "\21E8";
+    padding-left: 1.3rem;
+
+    &::marker {
+        color: rgba(0, 0, 255, 0.605);
+        font-size: 2rem;
+    }
+}
+
+.main-page--photos {
+    height: 25rem;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    place-items: center;
+}
+
+.img-slider {
+    height: 20rem;
+    width: 35rem;
+    /*border: 2px solid red;
+    */
+    background-image: url("/images/2.jpg");
+    background-size: 100% 100%;
+    animation: changeImage 10s linear infinite;
+    -webkit-animation: changeImage 10s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url("/images/2.jpg");
+    }
+
+    25% {
+        background-image: url("/images/1.jpg");
+    }
+
+    50% {
+        background-image: url("/images/4.jpg");
+    }
+
+    75% {
+        background-image: url("/images/annexe-building.jpg");
+    }
+
+    100% {
+        background-image: url("/images/2.jpg");
+    }
+
+}
+
+/* ENDS MAIN SECTION */
+
+/* STARTS ABOUT SECTION */
+
+h1 {
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px ; */
+    background-color: rgba(128, 128, 128, 0.265);
+    height: 5rem;
+    margin-top: 3rem;
+    /* margin-bottom: 3rem; */
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    color: rgb(7, 7, 169);
+}
+
+.about-part1 {
+    display: flex;
+
+    & figure img {
+        height: 15rem;
+        width: auto;
+    }
+}
+
+.about-part2 .first {
+    display: flex;
+    align-items: center;
+
+    & figure img {
+        height: 20rem;
+        width: 28rem;
+    }
+}
+
+.about-part2 .second {
+    display: flex;
+    align-items: center;
+
+    & figure img {
+        height: 20rem;
+        width: 28rem;
+    }
+}
+
+.about-part3 a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-section {
+    padding: 5rem;
+
+    & figure {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+/* ENDS ABOUT SECTION */
+
+/* STARTS FACULTY SECTION */
+
+#faculty-section {
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+
+    & a {
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+        border-left: 1.5px solid blue;
+    }
+
+}
+
+/* ENDS FACULTY SCETION */
+
+/* STARTS COURSES-SECTION */
+
+.courses-section {
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+}
+
+.courses-list {
+    padding-left: 3rem;
+    /* padding-top: 3rem; */
+    border-left: 1.5px solid blue;
+
+    & ul li {
+        list-style-type: "\21E8";
+        padding-left: 1.3rem;
+
+        &::marker {
+            color: rgba(0, 0, 255, 0.605);
+            font-size: 2rem;
+        }
+    }
+
+}
+
+/* ENDS COURSES-SECTION */
+
+/* STARTS DEPARTMENT SECTION */
+
+.department-section {
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+}
+
+.department-list {
+    padding-left: 3rem;
+    border-left: 1.5px solid blue;
+
+    & ul li {
+        list-style-type: "\21E8";
+        padding-left: 1.3rem;
+        text-transform: capitalize;
+
+        &::marker {
+            color: rgba(0, 0, 255, 0.605);
+            font-size: 2rem;
+        }
+    }
+
+}
+
+/* ENDS DEPARTMENT SECTION */
+
+/* STARTS CAMPUS-LIFE SECTION */
+
+.campus-life--section {
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+    & figure img {
+        height: 25rem;
+    }
+
+}
+
+.campus-map {
+    /* border-left: 1.5px solid blue; */
+    display: grid;
+    place-items: center;
+}
+
+
+.no2 {
+    & figure img {
+        height: 20rem;
+        width: 40rem;
+        display: grid;
+        place-items: center;
+
+    }
+}
+
+.no3 {
+    & figure img {
+        height: 20rem;
+        width: 40rem;
+        display: grid;
+        place-items: center;
+
+    }
+}
+
+.no4 {
+    & figure img {
+        height: 20rem;
+        width: 40rem;
+        display: grid;
+        place-items: center;
+
+    }
+}
+
+.campus-set {
+    display: grid;
+    place-items: center;
+    /* border-left: 1.5px solid blue; */
+}
+
+/* ENDS CAMPUS-LIFE SECTION */
+
+/* STARTS FOOTER SECTION */
+
+footer {
+    margin-top: 4rem;
+    height: 25rem;
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+
+    & a {
+        text-decoration: none;
+        color: rgb(66, 66, 241);
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+footer h2 {
+    color: azure;
+    border-bottom: 2px solid azure;
+}
+
+.footer-sec2 {
+    margin-top: 1rem;
+    background-color: grey;
+    color: black;
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+}
+
+.social-icons--LDCE {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons--LDCE a i {
+    height: 2.1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: inline-grid;
+    place-items: center;
+}
+
+.social-icons--LDCE a i:hover {
+    background-color: red;
+}
+
+/* ENDS FOOTER SECTION */
+
+/* STARTS MEDIA QUERIES - RESPONSIVE */
+
+@media (width<=1400px) {
+
+    html {
+        font-size: 85%;
+    }
+
+    .LDCE-logo{
+        gap: 35rem;
+    }
+
+    .header-list ul {
+        gap: 1.5rem;
+    }
+
+}
+
+@media (width<=1200px) {
+
+    header .navbar-section {
+        align-items: start;
+        padding-top: 0.4rem;
+
+        & .header-list {
+            margin-left: -13rem;
+        }
+    }
+
+}
+
+@media (width<=992px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    .LDCE-logo{
+        gap: 20rem;
+    }
+
+    header .navbar-section {
+
+        & .header-list {
+            margin-left: -18rem;
+        }
+    }
+
+}
+
+@media (width<=768px) {
+
+    html {
+        font-size: 65%;
+    }
+
+    .LDCE-logo{
+        gap: 3rem;
+    }
+
+    header .navbar-section {
+
+        & .header-list {
+            margin-left: -33rem;
+        }
+    }
+
+    .about-section {
+
+        & .about-part1 figure {
+            margin-left: 0rem;
+        }
+
+        & .about-part2 {
+
+            & .first figure {
+                margin-right: 0rem;
+            }
+
+            & .second figure {
+                margin-left: 0rem;
+            }
+
+            & figure img {
+                height: 15rem;
+                width: 20rem;
+            }
+        }
+
+    }
+
+}
+
+@media (width<=576) {
+
+    
+
+}
+
+/* 300 */
