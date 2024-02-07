@@ -442,6 +442,15 @@ footer h2 {
 
 /* STARTS MEDIA QUERIES - RESPONSIVE */
 
+@media (width<=1497px) {
+
+    .LDCE-logo {
+        gap: 40rem;
+        display: flex;
+    }
+
+}
+
 @media (width<=1400px) {
 
     html {
@@ -533,9 +542,114 @@ footer h2 {
 
 }
 
-@media (width<=576) {
+@media (width<=576px) {
 
-    
+    html {
+        font-size: 60%;
+    }
+
+    .LDCE-logo{
+        gap: 1rem;
+
+        & a img{
+            height: 3rem;
+        }
+    }
+
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        & .img-slider{
+            height: 18rem;
+            width: 25rem;
+        }
+    }
+
+    header  {
+        height: 11rem;
+
+        & .header-list {
+            
+            & ul{
+                gap: 1rem;
+                display: grid;
+
+                & li:nth-child(1){
+                    grid-row: 1/2;
+                }
+                & li:nth-child(2){
+                    grid-row: 1/2;
+                }
+                & li:nth-child(3){
+                    grid-row: 1/2;
+                }
+                & li:nth-child(4){
+                    grid-row: 2/3;
+                }
+                & li:nth-child(5){
+                    grid-row: 2/3;
+                }
+                & li:nth-child(6){
+                    grid-row: 2/3;
+                }
+
+            }
+        }
+    }
+
+    .about-section {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        & .about-part1 figure {
+            margin-left: 0rem;
+            margin-right: 1rem;
+            
+            & img{
+                height: 10rem;
+            }
+        }
+
+        & .about-part2 {
+
+            & .first figure {
+                margin-right: 0rem;
+                margin-left: 1rem;
+            }
+
+            & .second figure {
+                margin-left: 0rem;
+                margin-right: 1rem;
+            }
+
+            & figure img {
+                height: 10rem;
+                width: 14rem;
+            }
+        }
+
+    }
+
+    .campus-life--section{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        & figure img{
+            height: 15rem;
+            width: 30rem;
+        }
+
+        .campus-map figure img {
+            height: 20rem;
+        }
+    }
+
+    #faculty-section{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
 }
 
