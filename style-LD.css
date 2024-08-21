@@ -146,7 +146,7 @@ main li {
     width: 35rem;
     /*border: 2px solid red;
     */
-    background-image: url("/images/2.jpg");
+    background-image: url("./images/2.jpg");
     background-size: 100% 100%;
     animation: changeImage 10s linear infinite;
     -webkit-animation: changeImage 10s linear infinite;
@@ -155,23 +155,23 @@ main li {
 
 @keyframes changeImage {
     0% {
-        background-image: url("/images/2.jpg");
+        background-image: url("./images/2.jpg");
     }
 
     25% {
-        background-image: url("/images/1.jpg");
+        background-image: url("./images/1.jpg");
     }
 
     50% {
-        background-image: url("/images/4.jpg");
+        background-image: url("./images/4.jpg");
     }
 
     75% {
-        background-image: url("/images/annexe-building.jpg");
+        background-image: url("./images/annexe-building.jpg");
     }
 
     100% {
-        background-image: url("/images/2.jpg");
+        background-image: url("./images/2.jpg");
     }
 
 }
